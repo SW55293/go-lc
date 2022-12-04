@@ -12,3 +12,19 @@ count = 2  // Update/Change to new value
 
 count = false // This throws a compiler error due to assigning a non `int` type
 ```
+
+###### Functions accepts zero or more parameters
+
+```
+// Hello is a public function.
+func Hello (name string) string {
+    return hi(name)
+}
+
+// hi is a private function.
+func hi (name string) string {
+    return "hi " + name
+
+private = lowercase
+public = uppercase
+```
