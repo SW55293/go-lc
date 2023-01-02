@@ -1,1 +1,1 @@
-# Leetcode Practice in GO
+# GO Practice
