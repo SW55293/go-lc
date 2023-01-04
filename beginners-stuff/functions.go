@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	fmt.Print("\nFunctions with 1 argument\n\n")
@@ -9,6 +12,10 @@ func main() {
 
 	fmt.Print("\nFunctions with 2 arguments\n\n")
 	twoArguments([]string{"cloud", "rain", "tree"}, oneArgument)
+
+	fmt.Print("\nReturn a Value\n\n")
+	areaOne := returnValue(11)
+	fmt.Printf("the radius of circle 1 is = %v\n", areaOne)
 
 }
 
@@ -22,4 +29,9 @@ func twoArguments(a []string, f func(string)) {
 	for _, v := range a {
 		f(v)
 	}
+}
+
+func returnValue(radius float64) float64 {
+	//1
+	return math.Pi * radius * radius
 }
